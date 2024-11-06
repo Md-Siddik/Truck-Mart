@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hover:translate-y-1; hover:opacity-90; */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulseEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hover-scale {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.click-effect {
+    transition: transform 0.2s ease-in-out;
+}
+
+.click-effect:active {
+    transform: scale(0.95);
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+.animate-slideDown {
+    animation: slideDown 0.8s ease-in-out;
+}
+
+.icon-pulse {
+    animation: pulseEffect 1.5s infinite;
+}
+
+.truck-icon {
+    background: url('path/to/truck-icon.png') no-repeat center center;
+    background-size: contain;
+    width: 30px;
+    /* adjust size */
+    height: 30px;
+    /* adjust size */
+}
+
+@keyframes gradientSwap {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Truck sliding from left to right */
+@keyframes truckSlide {
+    0% {
+      left: -100px;
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      left: 100%;
+      opacity: 0;
+    }
+  }
+  
+  /* Text sliding in from left to right after truck animation */
+  @keyframes textSlide {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Truck icon animation */
+  .animate-truckSlide {
+    animation: truckSlide 1.5s forwards linear;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+  }
+  
+  /* Text slide animation (appears after truck finishes) */
+  .animate-textSlide {
+    animation: textSlide 1s ease-in-out forwards;
+    animation-delay: 0.8s; /* Delayed until truck animation finishes */
+    opacity: 0;
+  }
+  

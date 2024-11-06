@@ -1,0 +1,47 @@
+[
+    {
+        "truckId": "T128",
+        "image": "/images/truck1.jpg",
+        "city": "Oslo",
+        "latitude": 59.9139,
+        "longitude": 10.7522,
+        "status": "Active",
+        "lastUpdated": "2024-09-23 12:30 PM"
+    },
+    {
+        "truckId": "T124",
+        "image": "/images/truck1.jpg",
+        "city": "Los Angeles",
+        "latitude": 34.0522,
+        "longitude": -118.2437,
+        "status": "In Maintenance",
+        "lastUpdated": "2024-09-22 4:30 PM"
+    },
+    {
+        "truckId": "T125",
+        "image": "/images/truck1.jpg",
+        "city": "New York",
+        "latitude": 40.7128,
+        "longitude": -74.0060,
+        "status": "Operational",
+        "lastUpdated": "2024-09-23 8:15 AM"
+    },
+    {
+        "truckId": "T126",
+        "image": "/images/truck1.jpg",
+        "city": "Chicago",
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "status": "Out of Service",
+        "lastUpdated": "2024-09-21 9:00 AM"
+    },
+    {
+        "truckId": "T127",
+        "image": "/images/truck1.jpg",
+        "city": "Houston",
+        "latitude": 29.7604,
+        "longitude": -95.3698,
+        "status": "Operational",
+        "lastUpdated": "2024-09-23 11:00 AM"
+    }
+]
